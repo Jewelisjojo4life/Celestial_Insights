@@ -3,6 +3,7 @@
 
 ## user story
 As a user I want a webpage that shows the nasa picture of the day, and will show me my horoscope for the day
+When I go to the page I am presented with a modal to enter my birthday that will determine my sign.
 
 As a user I need to be able to select my sign
 When I click on my sign, my horoscope is displayed.
