@@ -17,6 +17,7 @@ body {
   position: absolute;
   top: 10%;
   transform: translate(0, -50%);
+  margin-right: 250px;
   padding: 10px;
 }
 
@@ -101,4 +102,7 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+.link {
+  margin-left: 100px;
 }
