@@ -11,4 +11,12 @@ fetch(apiUrl)
     image.src = imageUrl;
     document.body.appendChild(image);
   })
+<<<<<<< HEAD
   .catch((error) => console.error(error));
+/*
+// nasa api key l5GtDWfkWyULq63gu1indn3GHKzKgrbbb2hXXiZB
+// nasa api https://api.nasa.gov/planetary/apod?api_key=l5GtDWfkWyULq63gu1indn3GHKzKgrbbb2hXXiZB&count=5
+>>>>>>> 75054c9491d97d26eca23bd21e6ee3885e47686a*/
+=======
+  .catch((error) => console.error(error));
+>>>>>>> 17aabfbe9c85e57545291b20f010b5466956c929
