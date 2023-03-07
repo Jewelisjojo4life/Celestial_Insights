@@ -6,18 +6,22 @@ const options = {
 		'X-RapidAPI-Host': 'sameer-kumar-aztro-v1.p.rapidapi.com'
 	}
 }
-const signsUrl = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=taurus&day=today" 
+const signsUrl = 'https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=taurus'
 const horoscopeContainer = document.querySelector('.horoscopeContainer')
+const tomorrowEl = document.querySelector('.tomorrow')
+const todayEl = document.querySelector('.today')
+const yesterdayEl = document.querySelector('.yesterday')
+let fetchUrl = signsUrl + '&day=today'
 // const today = dayjs()
 
 //build url
 // sign = document.getElementById('#signModal').value
 // dateSelection = document.getElementById('#signModal').value
-// fetchUrl = `${signsUrl}?sign=${sign}&day=${dateselection}`
+// fetchUrl = `${signsUrl}?sign=${sign}&day=today`
 
 //get data
 async function getSignData(){
-    let response = await fetch(signsUrl, options)
+    let response = await fetch(fetchUrl, options)
 	var data = await response.json()
     displayData(data)
 }
@@ -25,7 +29,7 @@ async function getSignData(){
 //display data
 async function displayData(data){
     console.log(data)
-    //this will eventually pick the proper image from an array or hard coded in if statements, but for testing its a static image
+    //this will eventually pick the proper image from an object or hard coded in if statements, but for testing its a static image in html
     // let signImg = document.createElement('img')
     // signImg.src = "./assets/images/taurus.jpg"
     //this will eventually be pulled from the modal
@@ -40,13 +44,19 @@ async function displayData(data){
     signmood.textContent = `Mood: ${data.mood}`
 }
 
-getSignData()
+//eventlistners for day buttons
+yesterdayEl.addEventListener('click', changeDay('yesterday'))
 
-color:"Gold"
-compatibility:"Virgo"
-current_date:"March 7, 2023"
-date_range:"Apr 21 - May 20"
-description:"Your sweetheart isn't deliberately out to snow you. The issue you two have been wrangling over has been tricky because neither of you knows quite what to do about it. That includes you, remember, so don't be too hard on them."
-lucky_number:"70"
-lucky_time:"1pm"
-mood:"Tolerance"
+todayEl.addEventListener('click', changeDay('today'))
+
+yesterdayEl.addEventListener('click', changeDay('yesterday'))
+    
+
+//function for changing url  and fetching for day event listners
+function changeDay(day){
+    fetchUrl = `${signsUrl}&day=${day}`
+    getSignData()
+}
+
+
+getSignData()
