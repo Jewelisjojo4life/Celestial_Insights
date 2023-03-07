@@ -2,9 +2,6 @@ const fetchButton = document.getElementById("fetch-button");
 fetchButton.addEventListener("click", fetchApods);
 
 function fetchApods() {
-  const startDate = new Date(document.getElementById("start-date").value);
-  const endDate = new Date(document.getElementById("end-date").value);
-
   const apiKey = "GlSGHq2TnpNyMQJfxZHBDc3q4DLE9E8GR2yVhl4f";
   const apodUrls = [];
 
@@ -31,3 +28,35 @@ function fetchApods() {
     })
     .catch(error => console.error(error));
 }
+
+$(function() {
+  
+  var minDate = new Date(2023, 0, 1);
+  var maxDate = new Date(2023, 12, 30);
+
+ 
+  $("#start-date").datepicker({
+    dateFormat: "yy-mm-dd",
+    minDate: minDate,
+    maxDate: maxDate,
+    onSelect: function(selectedDate) {
+    
+      var startDate = $(this).datepicker("getDate");
+      var minEndDate = new Date(startDate.getTime());
+      minEndDate.setDate(startDate.getDate() + 7); 
+      $("#end-date").datepicker("option", "minDate", minEndDate);
+    }
+  });
+  $("#end-date").datepicker({
+    dateFormat: "yy-mm-dd",
+    minDate: minDate,
+    maxDate: maxDate,
+    onSelect: function(selectedDate) {
+      
+      var endDate = $(this).datepicker("getDate");
+      var maxStartDate = new Date(endDate.getTime());
+      maxStartDate.setDate(endDate.getDate() - 7); 
+      $("#start-date").datepicker("option", "maxDate", maxStartDate);
+    }
+  });
+});
