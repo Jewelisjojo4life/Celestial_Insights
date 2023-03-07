@@ -1,6 +1,6 @@
 body {
   align-items: center;
-  background-color: black;
+  background-image: url('assets/images/star-background.jpg');
   display: flex;
   height: 100%;
   justify-content: center;
