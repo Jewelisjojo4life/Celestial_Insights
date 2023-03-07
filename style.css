@@ -27,6 +27,21 @@ body {
   padding: 10px;
 }
 
+.btn-container {
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+
+.btn {
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: 'starwars';
+}
+
 .planet-container {
   border-radius: 50%;
   box-shadow: 5px -3px 10px 3px #5e90f1;
