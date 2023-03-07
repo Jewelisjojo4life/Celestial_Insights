@@ -5,7 +5,10 @@ function fetchApods() {
   const apiKey = "GlSGHq2TnpNyMQJfxZHBDc3q4DLE9E8GR2yVhl4f";
   const apodUrls = [];
 
-  for (let date = startDate; date <= endDate; date.setDate(date.getDate() + 1)) {
+  const startDate = $("#start-date").datepicker("getDate");
+  const endDate = $("#end-date").datepicker("getDate");
+
+  for (let date = new Date(startDate); date <= endDate; date.setDate(date.getDate() + 1)) {
     const formattedDate = date.toISOString().slice(0, 10);
     const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${formattedDate}`;
     apodUrls.push(apiUrl);
@@ -23,6 +26,15 @@ function fetchApods() {
         const imageUrl = apod.url;
         const image = document.createElement("img");
         image.src = imageUrl;
+
+        const titleElem = document.createElement("h2");
+        titleElem.textContent = title;
+        apodsDiv.appendChild(titleElem);
+
+        const explanationElem = document.createElement("p");
+        explanationElem.textContent = explanation;
+        apodsDiv.appendChild(explanationElem);
+
         apodsDiv.appendChild(image);
       });
     })
@@ -59,4 +71,4 @@ $(function() {
       $("#start-date").datepicker("option", "maxDate", maxStartDate);
     }
   });
-});
+}); 
