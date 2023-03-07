@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "starwars";
+  src: url('assets/fonts/Starjedi.ttf');
+}
+
 body {
   align-items: center;
   background-image: url('assets/images/star-background.jpg');
@@ -8,7 +13,8 @@ body {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  font-family: "JD Bagues", sans-serif;
+  font-family: "starwars";
+  font-size: 15px;
   color: black;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
