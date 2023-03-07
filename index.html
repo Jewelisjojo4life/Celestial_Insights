@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.cdnfonts.com/css/jd-bagues" rel="stylesheet" />
-    <title>Project1</title>
-  </head>
-  <body>
-    <div class="center">
-      <h1>This is a test</h1>
-    </div>
-    <div class="planet-container">
-      <div class="night"></div>
-      <div class="day"></div>
-      <div class="clouds"></div>
-      <div class="inner-shadow"></div>
-    </div>
-    <a class="link" href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.cdnfonts.com/css/jd-bagues" rel="stylesheet" />
+  <title>Project1</title>
+</head>
+
+<body>
+  <div class="center">
+    <h1>This is a test</h1>
+  </div>
+  <div class="planet-container">
+    <div class="night"></div>
+    <div class="day"></div>
+    <div class="clouds"></div>
+    <div class="inner-shadow"></div>
+  </div>
+  <ul style="display: block;">
+    <li>
+      <a class="link1"
+        href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8">
         Picture of the Day
-    </a >
-    <section class="horoscopeContainer" style="width: 400px; margin-top: 300px;"></section>
-    <script src="./assets/horoscope.js"></script>
-    <li>  <a
-      class="link2"
-      href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8"
-      >Horoscope</a</li>
-  </body>
+      </a>
+    </li>
+    <li>
+      <a class="link2"
+        href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8">
+        Horoscope
+      </a>
+    </li>
+  </ul>
+  <section class="horoscopeContainer" style="width: 400px; margin-left: 20px;">
+    <img src="./assets/images/taurus.jpg" /><!--temp, src will be pulled from modal-->
+    <h2 class="signh2">Taurus</h2><!--temp, src will be pulled from modal-->
+    <button class="yesterday">Yesterday</button>
+    <button class="today">Today</button>
+    <button class="tomorrow">Tomorrow</button>
+    <p class="description"></p>
+    <p class="daterange"></p>
+    <p class="luckynumber"></p>
+    <p class="mood"></p>
+  </section>
+  <script src="./assets/horoscope.js"></script>
+</body>
+
 </html>
