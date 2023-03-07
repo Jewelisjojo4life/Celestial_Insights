@@ -20,6 +20,8 @@ let fetchUrl = signsUrl + '&day=today'
 // fetchUrl = `${signsUrl}?sign=${sign}&day=today`
 
 //get data
+
+
 async function getSignData(){
     let response = await fetch(fetchUrl, options)
 	var data = await response.json()
@@ -44,19 +46,24 @@ async function displayData(data){
     signmood.textContent = `Mood: ${data.mood}`
 }
 
-//eventlistners for day buttons
-yesterdayEl.addEventListener('click', changeDay('yesterday'))
-
-todayEl.addEventListener('click', changeDay('today'))
-
-yesterdayEl.addEventListener('click', changeDay('yesterday'))
-    
-
 //function for changing url  and fetching for day event listners
 function changeDay(day){
     fetchUrl = `${signsUrl}&day=${day}`
+    console.log(fetchUrl)
     getSignData()
 }
 
+//eventlistners for day buttons
+yesterdayEl.addEventListener('click', function(){
+    changeDay('yesterday')
+})
+
+todayEl.addEventListener('click', function(){
+    changeDay('today')
+})
+
+tomorrowEl.addEventListener('click', function(){
+    changeDay('tomorrow')
+})
 
 getSignData()
