@@ -81,7 +81,7 @@ img {
 }
 .night {
   animation: rotate-night 80s linear infinite;
-  background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_nightmap.jpg);
+  background-image: url(./assets/images/2k_earth_nightmap.jpg);
   background-size: 200%;
   height: 500px;
   position: absolute;
@@ -90,7 +90,7 @@ img {
 }
 .day {
   animation: rotate-day 80s linear infinite;
-  background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg);
+  background-image: url(./assets/images/2k_earth_daymap.jpg);
   background-size: 200%;
   border-left: solid 1px black;
   border-radius: 50%;
