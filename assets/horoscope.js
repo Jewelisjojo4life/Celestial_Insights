@@ -13,7 +13,6 @@ const tomorrowEl = document.querySelector('.tomorrow')
 const todayEl = document.querySelector('.today')
 const yesterdayEl = document.querySelector('.yesterday')
 const modalEl = document.querySelector('.signlist')
-let fetchUrl = signsUrl + '&day=today'
 savedSign = JSON.parse(localStorage.getItem("signCache"))
 
 //setup modal
@@ -47,7 +46,7 @@ modalEl.addEventListener('click', function(event){
     fetchUrl = `${signsUrl}?sign=${savedSign.sign}&day=today`
     localStorage.setItem('signCache', JSON.stringify(savedSign))
     getSignData()
-    $( "#dialog" ).dialog( "close" )
+    $("#dialog").dialog("close")
 })
 
 fetchUrl = `${signsUrl}?sign=${savedSign.sign}&day=today`
@@ -61,7 +60,6 @@ async function getSignData(){
 
 //display data
 async function displayData(data){
-    console.log(data)
     //this will eventually pick the proper image from an object or hard coded in if statements, but for testing its a static image in html
     // let signImg = document.createElement('img')
     // signImg.src = "./assets/images/taurus.jpg"
@@ -76,10 +74,9 @@ async function displayData(data){
     signmood.textContent = `Mood: ${data.mood}`
 }
 
-//function for changing url  and fetching for day event listners
+//function for changing url and fetching for day event listners
 function changeDay(day){
     fetchUrl = `${signsUrl}?sign=${savedSign.sign}&day=${day}`
-    console.log(fetchUrl)
     getSignData()
 }
 
