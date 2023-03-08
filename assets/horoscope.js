@@ -6,18 +6,51 @@ const options = {
 		'X-RapidAPI-Host': 'sameer-kumar-aztro-v1.p.rapidapi.com'
 	}
 }
-const signsUrl = 'https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=taurus'
+const signsUrl = 'https://sameer-kumar-aztro-v1.p.rapidapi.com/'
 const horoscopeContainer = document.querySelector('.horoscopeContainer')
+const signh2El = document.querySelector('.signh2')
 const tomorrowEl = document.querySelector('.tomorrow')
 const todayEl = document.querySelector('.today')
 const yesterdayEl = document.querySelector('.yesterday')
+const modalEl = document.querySelector('.signlist')
 let fetchUrl = signsUrl + '&day=today'
-// const today = dayjs()
+savedSign = JSON.parse(localStorage.getItem("signCache"))
 
-//build url
-// sign = document.getElementById('#signModal').value
-// dateSelection = document.getElementById('#signModal').value
-// fetchUrl = `${signsUrl}?sign=${sign}&day=today`
+//setup modal
+$( "#dialog" ).dialog({
+    autoOpen: false,
+    show: {
+      effect: "blind",
+      duration: 500
+    },
+    hide: {
+      effect: "blind",
+      duration: 250
+    }
+  });
+
+$( "#opener" ).on( "click", function() {
+    $( "#dialog" ).dialog( "open" );
+});
+
+//if users sign isnt saved locally, open modal
+if (!savedSign){
+    //set savedSign in case user closes window and doesn't select a sign.
+    savedSign={sign:'aquarius'}
+    $( "#dialog" ).dialog( "open" )
+}
+
+//eventlistner for modal signs
+modalEl.addEventListener('click', function(event){
+    selectedSign = event.target
+    savedSign.sign = selectedSign.textContent
+    fetchUrl = `${signsUrl}?sign=${savedSign.sign}&day=today`
+    localStorage.setItem('signCache', JSON.stringify(savedSign))
+    getSignData()
+    $( "#dialog" ).dialog( "close" )
+})
+
+fetchUrl = `${signsUrl}?sign=${savedSign.sign}&day=today`
 
 //get data
 async function getSignData(){
@@ -32,8 +65,7 @@ async function displayData(data){
     //this will eventually pick the proper image from an object or hard coded in if statements, but for testing its a static image in html
     // let signImg = document.createElement('img')
     // signImg.src = "./assets/images/taurus.jpg"
-    //this will eventually be pulled from the modal
-    // signName.textContent = "Taurus"
+    signh2El.textContent = savedSign.sign
     signDescription = document.querySelector('.description')
     signDescription.textContent = data.description
     signDate = document.querySelector('.daterange')
@@ -46,7 +78,7 @@ async function displayData(data){
 
 //function for changing url  and fetching for day event listners
 function changeDay(day){
-    fetchUrl = `${signsUrl}&day=${day}`
+    fetchUrl = `${signsUrl}?sign=${savedSign.sign}&day=${day}`
     console.log(fetchUrl)
     getSignData()
 }

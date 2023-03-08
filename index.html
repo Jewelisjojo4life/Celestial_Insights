@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <link rel="stylesheet" href="style.css" />
+<head>  
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.cdnfonts.com/css/jd-bagues" rel="stylesheet" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <title>Project1</title>
 </head>
 
@@ -15,12 +19,12 @@
   <div class="center">
     <h1>This is a test</h1>
   </div>
-  <div class="planet-container">
+  <!-- <div class="planet-container">
     <div class="night"></div>
     <div class="day"></div>
     <div class="clouds"></div>
     <div class="inner-shadow"></div>
-  </div>
+  </div> -->
   <ul style="display: block;">
     <li>
       <a class="link1"
@@ -51,6 +55,23 @@
       <p class="luckynumber"></p>
       <p class="mood"></p>
     </section>
+    <div id="dialog" title="Pick your Sign">
+      <ul class="signlist">
+        <li>Aries</li>
+        <li>Taurus</li>
+        <li>Gemini</li>
+        <li>Cancer</li>
+        <li>Leo</li>
+        <li>Virgo</li>
+        <li>Libra</li>
+        <li>Scorpio</li>
+        <li>Sagittarius</li>
+        <li>Capricorn</li>
+        <li>Aquarius</li>
+        <li>Pisces</li>
+      </ul>
+    </div>
+    <button id="opener">Change Your Sign</button>
   <script src="./assets/horoscope.js"></script>
 </body>
 
