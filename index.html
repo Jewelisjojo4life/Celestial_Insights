@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- <div></div>  -->
   <div class="center">
     <h1>This is a test</h1>
   </div>
@@ -23,28 +24,33 @@
   <ul style="display: block;">
     <li>
       <a class="link1"
-        href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+        href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8"
+        target="_blank">
         Picture of the Day
       </a>
     </li>
     <li>
       <a class="link2"
-        href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+        href="https://www.google.com/search?q=space+pictures&oq=space+pic&aqs=chrome.0.0i433i512j69i57j0i512l8.4527j0j7&sourceid=chrome&ie=UTF-8"
+        target="_blank">
         Horoscope
       </a>
     </li>
   </ul>
   <section class="horoscopeContainer" style="width: 400px; margin-left: 20px;">
-    <img src="./assets/images/taurus.jpg" /><!--temp, src will be pulled from modal-->
+    <img class="horoscope-picture" src="./assets/images/taurus.jpg" /><!--temp, src will be pulled from modal-->
     <h2 class="signh2">Taurus</h2><!--temp, src will be pulled from modal-->
-    <button class="yesterday">Yesterday</button>
-    <button class="today">Today</button>
-    <button class="tomorrow">Tomorrow</button>
-    <p class="description"></p>
-    <p class="daterange"></p>
-    <p class="luckynumber"></p>
-    <p class="mood"></p>
-  </section>
+    <section class="btn-container">
+      <button class="yesterday btn">Yesterday</button>
+      <button class="today btn">Today</button>
+      <button class="tomorrow btn">Tomorrow</button>
+    </section>
+    <section class="date-luckyNumber-mood">
+      <p class="description"></p>
+      <p class="daterange"></p>
+      <p class="luckynumber"></p>
+      <p class="mood"></p>
+    </section>
   <script src="./assets/horoscope.js"></script>
 </body>
 
