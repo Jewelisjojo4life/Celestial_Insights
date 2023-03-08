@@ -42,6 +42,28 @@ body {
   font-family: 'starwars';
 }
 
+.signh2 {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.description {
+  text-align: center;
+  
+}
+
+.date-luckyNumber-mood {
+  text-align: center;
+}
+
+.horoscope-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
 .planet-container {
   border-radius: 50%;
   box-shadow: 5px -3px 10px 3px #5e90f1;
