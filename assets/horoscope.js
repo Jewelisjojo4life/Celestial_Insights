@@ -20,8 +20,6 @@ let fetchUrl = signsUrl + '&day=today'
 // fetchUrl = `${signsUrl}?sign=${sign}&day=today`
 
 //get data
-
-
 async function getSignData(){
     let response = await fetch(fetchUrl, options)
 	var data = await response.json()
