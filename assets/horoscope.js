@@ -79,6 +79,7 @@ const tomorrowEl = document.querySelector('.tomorrow')
 const todayEl = document.querySelector('.today')
 const yesterdayEl = document.querySelector('.yesterday')
 const modalEl = document.querySelector('.signlist')
+const signImg = document.querySelector('.signImg')
 savedSign = JSON.parse(localStorage.getItem("signCache"))
 
 //setup modal
@@ -126,9 +127,7 @@ async function getSignData(){
 
 //display data
 async function displayData(data){
-    //this will eventually pick the proper image from an object or hard coded in if statements, but for testing its a static image in html
-    // let signImg = document.createElement('img')
-    // signImg.src = "./assets/images/taurus.jpg"
+    signImg.src = `./assets/images/${savedSign.sign}.jpg`
     signh2El.textContent = savedSign.sign
     signDescription = document.querySelector('.description')
     signDescription.textContent = data.description
