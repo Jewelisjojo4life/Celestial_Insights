@@ -10,6 +10,8 @@ body {
   height: 100%;
   justify-content: center;
   margin: 0 0;
+  margin-top: 25px;
+  flex-direction: column;
   width: 100%;
   font-family: "starwars";
   font-size: 15px;
@@ -156,9 +158,14 @@ button:hover {
   cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
 }
 #opener {
-  margin-left: 33%;
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
   font-family: "starwars";
   background-color: #0fa;
+  margin: 3%;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }

@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/jd-bagues" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Project1</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="planet-container">
+        <div class="night"></div>
+        <div class="day"></div>
+        <div class="clouds"></div>
+        <div class="inner-shadow"></div>
+      </div>
 
-<head>  
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.cdnfonts.com/css/jd-bagues" rel="stylesheet" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <title>Project1</title>
-</head>
-<body>
- 
-
-  <div class="planet-container">
-    <div class="night"></div>
-    <div class="day"></div>
-    <div class="clouds"></div>
-    <div class="inner-shadow"></div>
-  </div>
-
-  <section class="horoscopeContainer" style="width: 400px; margin-left: 10px; padding-left:40%;">
-    <img class="signImg" />
-    <h2 class="signh2"></h2>
-    <section class="btn-container">
-      <button class="yesterday btn">Yesterday</button>
-      <button class="today btn">Today</button>
-      <button class="tomorrow btn">Tomorrow</button>
-    </section>
-    <section class="date-luckyNumber-mood">
-      <p class="description"></p>
-      <p class="daterange"></p>
-      <p class="luckynumber"></p>
-      <p class="mood"></p>
-    </section>
-    <div id="dialog" title="Pick your Sign">
-      <ul class="signlist">
-        <li>Aries</li>
-        <li>Taurus</li>
-        <li>Gemini</li>
-        <li>Cancer</li>
-        <li>Leo</li>
-        <li>Virgo</li>
-        <li>Libra</li>
-        <li>Scorpio</li>
-        <li>Sagittarius</li>
-        <li>Capricorn</li>
-        <li>Aquarius</li>
-        <li>Pisces</li>
-      </ul>
+      <section class="horoscopeContainer" style="width: 400px">
+        <img class="signImg" />
+        <h2 class="signh2"></h2>
+        <section class="btn-container">
+          <button class="yesterday btn">Yesterday</button>
+          <button class="today btn">Today</button>
+          <button class="tomorrow btn">Tomorrow</button>
+        </section>
+        <section class="date-luckyNumber-mood">
+          <p class="description"></p>
+          <p class="daterange"></p>
+          <p class="luckynumber"></p>
+          <p class="mood"></p>
+        </section>
+        <div id="dialog" title="Pick your Sign">
+          <ul class="signlist">
+            <li>Aries</li>
+            <li>Taurus</li>
+            <li>Gemini</li>
+            <li>Cancer</li>
+            <li>Leo</li>
+            <li>Virgo</li>
+            <li>Libra</li>
+            <li>Scorpio</li>
+            <li>Sagittarius</li>
+            <li>Capricorn</li>
+            <li>Aquarius</li>
+            <li>Pisces</li>
+          </ul>
+        </div>
+      </section>
     </div>
-  </section>
     <button id="opener">Change Your Sign</button>
-  <script src="./assets/horoscope.js"></script>
-</body>
 
+    <script src="./assets/horoscope.js"></script>
+  </body>
 </html>
