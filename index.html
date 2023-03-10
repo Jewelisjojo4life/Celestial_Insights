@@ -16,6 +16,15 @@
   </head>
   <body>
     <div class="wrapper">
+
+      <form>
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" min="1995-06-16" max="2030-12-31">
+        <button class='btn form-btn' type="submit" id="submitBtn">Submit</button>
+      </form>
+  
+      <div id="apod"></div>
+
       <div class="planet-container">
         <div class="night"></div>
         <div class="day"></div>
@@ -55,8 +64,9 @@
         </div>
       </section>
     </div>
-    <button id="opener">Change Your Sign</button>
+    <button class="horoscopeContainer" id="opener">Change Your Sign</button>
 
     <script src="./assets/horoscope.js"></script>
+    <script scr="assets/script.js"></script>
   </body>
 </html>
