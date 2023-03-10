@@ -1,6 +1,6 @@
 @font-face {
   font-family: "starwars";
-  src: url('assets/fonts/SF Distant Galaxy Alternate.ttf');
+  src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
 }
 
 body {
@@ -10,7 +10,6 @@ body {
   height: 100%;
   justify-content: center;
   margin: 0 0;
-  position: absolute;
   width: 100%;
   font-family: "starwars";
   font-size: 15px;
