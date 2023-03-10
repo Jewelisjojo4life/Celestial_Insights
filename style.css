@@ -1,6 +1,6 @@
 @font-face {
   font-family: "starwars";
-  src: url('assets/fonts/Starjedi.ttf');
+  src: url('assets/fonts/SF Distant Galaxy Alternate.ttf');
 }
 
 body {
@@ -49,6 +49,9 @@ img {
 .signh2 {
   display: flex;
   justify-content: center;
+  font-size: 40px;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .description {
