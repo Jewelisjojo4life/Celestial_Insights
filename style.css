@@ -1,11 +1,11 @@
 @font-face {
   font-family: "starwars";
-  src: url('assets/fonts/Starjedi.ttf');
+  src: url("assets/fonts/Starjedi.ttf");
 }
 
 body {
   align-items: center;
-  background-image: url('assets/images/star-background.jpg');
+  background-image: url("assets/images/star-background.jpg");
   display: flex;
   height: 100%;
   justify-content: center;
@@ -20,14 +20,15 @@ body {
 }
 
 img {
-  position: relative; left: 70px
+  position: relative;
+  left: 70px;
 }
 
 .center {
   position: absolute;
   top: 10%;
   transform: translate(0, -50%);
-  margin-right: 250px;
+  margin-right: 200px;
   padding: 10px;
 }
 
@@ -42,7 +43,7 @@ img {
   border-radius: 10px;
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  font-family: 'starwars';
+  font-family: "starwars";
   background-color: #0fa;
 }
 
@@ -53,7 +54,6 @@ img {
 
 .description {
   text-align: center;
-  
 }
 
 .date-luckyNumber-mood {
@@ -155,4 +155,11 @@ img {
 
 button:hover {
   cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
+}
+#opener {
+  margin-left: 33%;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: #0fa;
 }
