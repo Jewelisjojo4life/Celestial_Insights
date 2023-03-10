@@ -2,7 +2,6 @@
   font-family: "starwars";
   src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
 }
-
 body {
   align-items: center;
   background-image: url("assets/images/star-background.jpg");
@@ -20,43 +19,39 @@ body {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
-
-.center {
-  position: absolute;
-  top: 10%;
-  transform: translate(0, -50%);
-  margin-right: 200px;
-  padding: 10px;
+button:hover {
+  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
 }
-
-.btn-container {
-  padding: 2px;
+.wrapper {
   display: flex;
+  width: 100%;
   justify-content: space-around;
 }
 
-.btn {
-  padding: 3px;
-  border-radius: 10px;
-  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  font-family: "starwars";
-  background-color: #0fa;
-}
-
-.signh2 {
+/*
+  Form fields
+*/
+form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+label {
+  margin: 10px;
 }
 
-.description {
-  text-align: center;
+.form-btn {
+  margin: 10px;
 }
 
-.date-luckyNumber-mood {
-  text-align: center;
+input {
+  margin: 10px;
 }
 
+/*
+  Planet
+*/
 .planet-container {
   border-radius: 50%;
   box-shadow: 5px -3px 10px 3px #5e90f1;
@@ -111,26 +106,6 @@ body {
   width: 500px;
   z-index: 5;
 }
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
-}
-
-label {
-  margin: 10px;
-}
-
-.form-btn {
-  margin: 10px;
-}
-
-input {
-  margin: 10px;
-}
-
 @keyframes rotate-day {
   0% {
     background-position: 120% 0;
@@ -158,19 +133,28 @@ input {
     transform: rotate(0deg);
   }
 }
-.link {
-  margin-left: 100px;
-}
-.wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
+/*
+  Horoscope
+*/
 .horoscopeContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 400px;
+}
+.btn-container {
+  padding: 2px;
+}
+.btn {
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: #0fa;
+}
+.date-luckyNumber-mood {
+  text-align: center;
 }
 #opener {
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
@@ -178,9 +162,6 @@ input {
   font-family: "starwars";
   background-color: #0fa;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 20px;
-}
-button:hover {
-  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
 }
