@@ -168,6 +168,9 @@ input {
   margin-top: 10px;
   border-radius: 20px;
 }
+/*
+  Modal
+*/
 #dialog{
   background-image: url("./assets/images/star-background.jpg")
 }
