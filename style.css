@@ -1,10 +1,6 @@
 @font-face {
   font-family: "starwars";
-<<<<<<< HEAD:style.css
   src: url("assets/fonts/Starjedi.ttf");
-=======
-  src: url('assets/fonts/SF Distant Galaxy Alternate.ttf');
->>>>>>> 2d99987df5f56dfd17a008d0ad122f8031f05493:assets/nasa.css
 }
 
 body {
@@ -23,9 +19,6 @@ body {
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
 
-#fetch-button:hover {
-  cursor: pointer;
-}
 img {
   position: relative;
   left: 70px;
@@ -57,9 +50,6 @@ img {
 .signh2 {
   display: flex;
   justify-content: center;
-  font-size: 40px;
-  margin: 0px;
-  margin-bottom: 10px;
 }
 
 .description {
