@@ -185,7 +185,7 @@ input {
   align-items: center;
 }
 .ui-dialog-title{
-  background-image: url("./assets/images/star-background.jpg")
+  background-color: black;
   font-family: "starwars";
   src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
 }
