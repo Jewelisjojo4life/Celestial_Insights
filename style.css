@@ -1,78 +1,51 @@
 @font-face {
   font-family: "starwars";
-  src: url('assets/fonts/SF Distant Galaxy Alternate.ttf');
+  src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
 }
-
 body {
-  align-items: center;
-  background-image: url('assets/images/star-background.jpg');
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  margin: 0 0;
-  position: absolute;
-  width: 100%;
+  background-image: url("assets/images/star-background.jpg");
   font-family: "starwars";
+  justify-content: space-around;
   font-size: 15px;
   color: black;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
-
-#fetch-button:hover {
-  cursor: pointer;
+button:hover {
+  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
 }
-img {
-  position: relative; left: 70px
-}
-
-.center {
-  position: absolute;
-  top: 10%;
-  transform: translate(0, -50%);
-  margin-right: 250px;
-  padding: 10px;
-}
-
-.btn-container {
-  padding: 2px;
+.wrapper {
   display: flex;
   justify-content: space-around;
-}
-
-.btn {
-  padding: 3px;
-  border-radius: 10px;
-  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  font-family: 'starwars';
-  background-color: #0fa;
-}
-
-.signh2 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  margin: 0px;
-  margin-bottom: 10px;
-}
-
-.description {
-  text-align: center;
-  
-}
-
-.date-luckyNumber-mood {
-  text-align: center;
-}
-
-.horoscope-picture {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  align-self: center;
+  width: 100%;
+  height: 750px;
+  margin: auto;
+}
+/*
+  Form fields
+*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+label {
+  margin: 10px;
 }
 
+.form-btn {
+  margin: 10px;
+}
+
+input {
+  margin: 10px;
+}
+
+/*
+  Planet
+*/
 .planet-container {
   border-radius: 50%;
   box-shadow: 5px -3px 10px 3px #5e90f1;
@@ -106,7 +79,7 @@ img {
 }
 .clouds {
   animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
-  background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg);
+  background-image: url("./assets/images/2k_earth_clouds.jpg");
   background-size: 200%;
   border-radius: 50%;
   box-shadow: 5px 0 20px 10px #040615 inset, -9px 0px 20px 10px #5e90f1 inset;
@@ -127,7 +100,6 @@ img {
   width: 500px;
   z-index: 5;
 }
-
 @keyframes rotate-day {
   0% {
     background-position: 120% 0;
@@ -155,10 +127,62 @@ img {
     transform: rotate(0deg);
   }
 }
-.link {
-  margin-left: 100px;
+/*
+  Horoscope
+*/
+.horoscopeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
 }
-
-button:hover {
-  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
+.btn-container {
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn {
+  border-radius: 10px;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: #0fa;
+}
+.date-luckyNumber-mood {
+  text-align: center;
+}
+#opener {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: #0fa;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+/*
+  Modal
+*/
+#dialog{
+  background-image: url("./assets/images/star-background.jpg")
+}
+#dialog ul{
+  padding: 0px;
+  list-style: none;
+  font-family: "starwars";
+  src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
+  background-image: url("./assets/images/star-background.jpg");
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ui-dialog-title{
+  background-color: black;
+  font-family: "starwars";
+  src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
 }
