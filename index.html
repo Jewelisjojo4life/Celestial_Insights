@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/assets/nasa.css">
   <title>Project1</title>
 </head>
 <body>
@@ -22,7 +23,12 @@
     <div class="clouds"></div>
     <div class="inner-shadow"></div>
   </div>
- 
+  
+  <form>
+    <label for="date">Select a date:</label>
+    <input type="date" id="date" name="date" min="1995-06-16" max="2030-12-31">
+    <button type="submit" id="submitBtn">Submit</button>
+  </form>
 
   <section class="horoscopeContainer" style="width: 400px; margin-left: 20px;">
     <img class="signImg" />
