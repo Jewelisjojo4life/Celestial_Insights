@@ -143,6 +143,14 @@ input {
   flex-direction: row;
   justify-content: space-between;
 }
+.signImg{
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.signh2{
+  text-align: center;
+}
 .bttn {
   border-radius: 10px;
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
