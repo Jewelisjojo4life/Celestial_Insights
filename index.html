@@ -18,23 +18,23 @@
     <title>Project1</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="font-family: starwars;">
 
-      <div class="row">
+      <div class="row"  style="height: 800px;">
     
-        <div class="col-md-4">
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
     
           <form>
-            <div class="form-group">
+            <div class="form-group align-items-center justify-content-center">
               <label for="date-input">Enter a date:</label>
               <input type="date" class="form-control" id="date-input" name="date-input">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="bttn mt-3">Submit</button>
           </form>
     
         </div>
     
-        <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <div class="col-md-5 d-flex align-items-center justify-content-center">
     
           <div class="planet-container">
             <div class="night"></div>
@@ -45,22 +45,22 @@
     
         </div>
     
-        <div class="col-md-4">
+        <div class="col-md-3 container d-flex align-items-center justify-content-center">
     
-          <div class="horoscopeContainer">
+          <div>
             <img class="signImg" />
             <h2 class="signh2"></h2>
-            <div class="btn-group" role="group">
-              <button class="yesterday btn btn-secondary">Yesterday</button>
-              <button class="today btn btn-secondary">Today</button>
-              <button class="tomorrow btn btn-secondary">Tomorrow</button>
+            <div class="bttn-container" role="group">
+              <button class="yesterday bttn">Yesterday</button>
+              <button class="today bttn">Today</button>
+              <button class="tomorrow bttn">Tomorrow</button>
             </div>
             <div class="date-luckyNumber-mood">
               <p class="description"></p>
               <p class="daterange"></p>
               <p class="luckynumber"></p>
               <p class="mood"></p>
-              <button id="opener" class="btn btn-primary">Change Your Sign</button>
+              <button id="opener" class="bttn">Change Your Sign</button>
             </div>
             <div id="dialog" title="Pick your Sign">
               <ul class="signlist">
