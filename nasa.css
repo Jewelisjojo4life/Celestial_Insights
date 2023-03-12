@@ -12,12 +12,16 @@
   }
   
   body {
-    margin: 0;
-    padding: 0;
-    font-family: 'JD Bagues', sans-serif;
-    font-size: 16px;
-    color: #333;
+    background-image: url("assets/images/star-background.jpg");
+    font-family: "starwars";
+    font-size: 15px;
+    color: black;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+      
+      
   }
+  
   
   header {
     background-color: #222;
@@ -52,16 +56,6 @@
     }
   }
   
-  body {
-    background-image: url("assets/images/star-background.jpg");
-    font-family: "starwars";
-    font-size: 15px;
-    color: black;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-      
-      
-  }
   
   
  
