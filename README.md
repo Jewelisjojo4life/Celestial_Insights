@@ -1,6 +1,6 @@
 # project-1
 
-##Description
+## Description
 As a user I want a webpage that shows the nasa picture of the day, and will show me my horoscope for the day
 When I go to the page I am presented with a modal to enter my sign.
 
