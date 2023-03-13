@@ -1,9 +1,11 @@
 
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'starwars', 'Arial', sans-serif;
   }
   
   @font-face {
@@ -25,9 +27,13 @@
   
   header {
     background-color: #222;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 1rem;
+  }
+
+  h2 {
+    margin: 10px;
   }
   
   main {
@@ -42,6 +48,8 @@
   img {
     max-width: 100%;
     height: auto;
+    /* height: 500px;
+    width: 500px; */
   }
   
   p {
