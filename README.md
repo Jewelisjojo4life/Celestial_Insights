@@ -15,7 +15,7 @@ When I click "Today", "Tomorrow", or "Yesterday" my horsocope changes to that da
 
 ## Technologies used
 The globe is done using CSS. CSS keyframes rotates the globe. The picture of the day along with its information uses the NASA APOD api that can be found at 
-!(https://api.nasa.gov/#browseAPI. Its the first API. The horoscope information is retrieved using tha API at https://rapidapi.com/sameer.kumar/api/aztro/.
+https://api.nasa.gov/#browseAPI. Its the first API. The horoscope information is retrieved using tha API at https://rapidapi.com/sameer.kumar/api/aztro/.
 
 ## Usage
 https://Jewelisjojo4life.github.io/project-1
