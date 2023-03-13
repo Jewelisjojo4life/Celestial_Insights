@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.cdnfonts.com/css/jd-bagues" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project1</title>
   </head>
   <body>
+<<<<<<< HEAD
     <div class="wrapper">
       <form>
         <h1>Nasa picture of the day</h1>
@@ -60,8 +64,74 @@
             <li>Taurus</li>
             <li>Virgo</li>
           </ul>
+=======
+    <div class="container-fluid" style="font-family: starwars;">
+
+      <div class="row"  style="height: 800px;">
+    
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+    
+          <form>
+            <div class="form-group align-items-center justify-content-center">
+              <label for="date-input">Enter a date:</label>
+              <input type="date" class="form-control" id="date-input" name="date-input">
+            </div>
+            <button type="submit" class="bttn mt-3">Submit</button>
+          </form>
+    
+>>>>>>> 8ad5ea6bb06f7858d43a5bc7c052b99f10728e95
         </div>
-      </section>
+    
+        <div class="col-md-5 d-flex align-items-center justify-content-center">
+    
+          <div class="planet-container">
+            <div class="night"></div>
+            <div class="day"></div>
+            <div class="clouds"></div>
+            <div class="inner-shadow"></div>
+          </div>
+    
+        </div>
+    
+        <div class="col-md-3 container d-flex align-items-center justify-content-center">
+    
+          <div>
+            <img class="signImg" />
+            <h2 class="signh2"></h2>
+            <div class="bttn-container" role="group">
+              <button class="yesterday bttn">Yesterday</button>
+              <button class="today bttn">Today</button>
+              <button class="tomorrow bttn">Tomorrow</button>
+            </div>
+            <div class="date-luckyNumber-mood">
+              <p class="description"></p>
+              <p class="daterange"></p>
+              <p class="luckynumber"></p>
+              <p class="mood"></p>
+              <button id="opener" class="bttn">Change Your Sign</button>
+            </div>
+            <div id="dialog" title="Pick your Sign">
+              <ul class="signlist">
+                <li>Aquarius</li>
+                <li>Aries</li>
+                <li>Cancer</li>
+                <li>Capricorn</li>
+                <li>Gemini</li>
+                <li>Leo</li>
+                <li>Libra</li>
+                <li>Pisces</li>
+                <li>Sagittarius</li>
+                <li>Scorpio</li>
+                <li>Taurus</li>
+                <li>Virgo</li>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    
     </div>
     <script src="./assets/horoscope.js"></script>
     <script src="./assets/POD.js"></script>
