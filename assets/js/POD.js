@@ -9,9 +9,7 @@ async function handleFormSubmit(event) {
   const date = document.querySelector('#date-input').value;
   const data = await fetchData(date);
   localStorage.setItem('apiData', JSON.stringify(data));
-  window.open('nasa.html');
-
-
+  window.open('./nasa.html');
  }
 
 async function fetchData(date) {
@@ -20,10 +18,3 @@ async function fetchData(date) {
   const data = await response.json();
   return data;
 }
-
-
-
-  
-  
-  
-

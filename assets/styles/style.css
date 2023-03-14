@@ -1,6 +1,6 @@
 @font-face {
   font-family: "starwars";
-  src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
+  src: url("../fonts/SF Distant Galaxy Alternate.ttf");
 }
 
 h1 {
@@ -11,7 +11,7 @@ h1 {
 }
 
 body {
-  background-image: url("assets/images/star-background.jpg");
+  background-image: url("../images/star-background.jpg");
   font-family: "starwars";
   justify-content: space-around;
   font-size: 15px;
@@ -73,7 +73,7 @@ input {
 }
 .night {
   animation: rotate-night 80s linear infinite;
-  background-image: url(./assets/images/2k_earth_nightmap.jpg);
+  background-image: url(../images/2k_earth_nightmap.jpg);
   background-size: 200%;
   height: 500px;
   position: absolute;
@@ -82,7 +82,7 @@ input {
 }
 .day {
   animation: rotate-day 80s linear infinite;
-  background-image: url(./assets/images/2k_earth_daymap.jpg);
+  background-image: url(../images/2k_earth_daymap.jpg);
   background-size: 200%;
   border-left: solid 1px black;
   border-radius: 50%;
@@ -95,7 +95,7 @@ input {
 }
 .clouds {
   animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
-  background-image: url("./assets/images/2k_earth_clouds.jpg");
+  background-image: url("../images/2k_earth_clouds.jpg");
   background-size: 200%;
   border-radius: 50%;
   box-shadow: 5px 0 20px 10px #040615 inset, -9px 0px 20px 10px #5e90f1 inset;
@@ -199,14 +199,14 @@ form {
   Modal
 */
 #dialog {
-  background-image: url("./assets/images/star-background.jpg");
+  background-image: url("../images/star-background.jpg");
 }
 #dialog ul {
   padding: 0px;
   list-style: none;
   font-family: "starwars";
-  src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
-  background-image: url("./assets/images/star-background.jpg");
+  src: url("../fonts/SF Distant Galaxy Alternate.ttf");
+  background-image: url("../images/star-background.jpg");
   height: 100%;
   margin: auto;
   display: flex;
@@ -222,7 +222,7 @@ form {
 .ui-dialog-title {
   background-color: black;
   font-family: "starwars";
-  src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
+  src: url("../fonts/SF Distant Galaxy Alternate.ttf");
 }
 .ui-resizable-handle {
   background: black;
@@ -231,6 +231,6 @@ form {
   background: black;
 }
 .ui-widget-header{
-  background: url(./assets/images/star-background.jpg);
+  background: url(../images/star-background.jpg);
   border: 1px solid black;
 }
