@@ -224,3 +224,13 @@ form {
   font-family: "starwars";
   src: url("assets/fonts/SF Distant Galaxy Alternate.ttf");
 }
+.ui-resizable-handle {
+  background: black;
+}
+.ui-widget-content{
+  background: black;
+}
+.ui-widget-header{
+  background: url(./assets/images/star-background.jpg);
+  border: 1px solid black;
+}
