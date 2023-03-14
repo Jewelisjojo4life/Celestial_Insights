@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "starwars";
+  src: url("../fonts/SF Distant Galaxy Alternate.ttf");
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: 'starwars';
+}
+
+body {
+  background-image: url("../images/star-background.jpg");
+  font-family: "starwars";
+  justify-content: space-around;
+  font-size: 15px;
+  color: black;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+button:hover {
+  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 750px;
+  margin: auto;
+}
+/*
+  Form fields
+*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+  0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: linear-gradient(to right, #33cc33 0%, #003300 100%);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+label {
+  margin: 10px;
+}
+
+.form-btn {
+  margin: 10px;
+}
+
+input {
+  margin: 10px;
+}
+
+/*
+  Planet
+*/
+.planet-container {
+  border-radius: 50%;
+  box-shadow: 5px -3px 10px 3px #5e90f1;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  z-index: 1;
+}
+.night {
+  animation: rotate-night 80s linear infinite;
+  background-image: url(../images/2k_earth_nightmap.jpg);
+  background-size: 200%;
+  height: 500px;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+}
+.day {
+  animation: rotate-day 80s linear infinite;
+  background-image: url(../images/2k_earth_daymap.jpg);
+  background-size: 200%;
+  border-left: solid 1px black;
+  border-radius: 50%;
+  box-shadow: 5px 0 20px 10px #040615 inset;
+  height: 500px;
+  margin-left: 110px;
+  position: absolute;
+  width: 500px;
+  z-index: 3;
+}
+.clouds {
+  animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
+  background-image: url("../images/2k_earth_clouds.jpg");
+  background-size: 200%;
+  border-radius: 50%;
+  box-shadow: 5px 0 20px 10px #040615 inset, -9px 0px 20px 10px #5e90f1 inset;
+  height: 500px;
+  margin-left: 100px;
+  opacity: 0.45;
+  position: absolute;
+  width: 500px;
+  z-index: 4;
+}
+.inner-shadow {
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -5px 0 10px 1px #152b57 inset, 5px 0 10px 1px #040615 inset;
+  height: 500px;
+  margin-left: 0;
+  position: absolute;
+  width: 500px;
+  z-index: 5;
+}
+@keyframes rotate-day {
+  0% {
+    background-position: 120% 0;
+  }
+  100% {
+    background-position: -80% 0;
+  }
+}
+@keyframes rotate-night {
+  0% {
+    background-position: calc(120% + 120px) 0;
+  }
+  100% {
+    background-position: calc(-80% + 120px) 0;
+  }
+}
+@keyframes spin-clouds {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*
+  Horoscope
+*/
+.horoscopeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+.bttn-container {
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.signImg{
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.signh2{
+  text-align: center;
+}
+.bttn {
+  border-radius: 10px;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: #0fa;
+}
+.date-luckyNumber-mood {
+  text-align: center;
+}
+#opener {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: #0fa;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+form {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-family: "starwars";
+  background-color: linear-gradient(to right, #33cc33 0%, #003300 100%);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+/*
+  Modal
+*/
+#dialog {
+  background-image: url("../images/star-background.jpg");
+}
+#dialog ul {
+  padding: 0px;
+  list-style: none;
+  font-family: "starwars";
+  src: url("../fonts/SF Distant Galaxy Alternate.ttf");
+  background-image: url("../images/star-background.jpg");
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dialog ul li:hover {
+  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth138.cur), auto !important;
+}
+
+.ui-dialog-title {
+  background-color: black;
+  font-family: "starwars";
+  src: url("../fonts/SF Distant Galaxy Alternate.ttf");
+}
+.ui-resizable-handle {
+  background: black;
+}
+.ui-widget-content{
+  background: black;
+}
+.ui-widget-header{
+  background: url(../images/star-background.jpg);
+  border: 1px solid black;
+}
