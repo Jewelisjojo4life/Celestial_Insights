@@ -18,7 +18,7 @@ The globe is done using CSS. CSS keyframes rotates the globe. The picture of the
 https://api.nasa.gov/#browseAPI. Its the first API. The horoscope information is retrieved using tha API at https://rapidapi.com/sameer.kumar/api/aztro/.
 
 ## Usage
-https://Jewelisjojo4life.github.io/project-1
+https://jewelisjojo4life.github.io/Celestial_Insights/
 will take you to the webpage shown below.
 
 ![Team 7 Project 1](assets/images/readme-screenshot.png)
