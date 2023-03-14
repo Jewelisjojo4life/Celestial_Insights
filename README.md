@@ -21,7 +21,7 @@ https://api.nasa.gov/#browseAPI. Its the first API. The horoscope information is
 https://jewelisjojo4life.github.io/Celestial_Insights/
 will take you to the webpage shown below.
 
-![Team 7 Project 1](assets\images\readMe-picture.png)
+![Team 7 Project 1](assets/images/readMe-picture.png)
 
 On first page load, you are presented with a modal that asks for you to select your sign. The information is stored locally. The horoscope information is then loaded. On the left side of the page you can pick a date from the date picker, when the date picked is submitted you are presented with a page that displays the NASA picture of the day and its information. In the horoscope section you have the option to select yesterday, today, and tomorrow. Clicking any of these buttons will give you the horoscope information for that day. Underneath the horoscope there is a button that allows you to change your sign in case you selected the wrong sign. The information is updated automatically.
 
